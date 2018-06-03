@@ -1,5 +1,5 @@
 
-A docker image to use spatie/phpunit-watcher for automatically rerun PHPUnit tests when source code changes
+A docker image to use [spatie/phpunit-watcher](https://github.com/spatie/phpunit-watcher) for automatically rerun PHPUnit tests when source code changes
 
 ## Installation
 
@@ -7,7 +7,7 @@ Download image ```docker pull josimarlemos/phpunit-watcher:alpine```
 
 ## Usage
 
-Run the composer image:
+Run the josimarlemos/phpunit-watcher image:
 
 ```docker run -it --rm --volume $(pwd):/app josimarlemos/phpunit-watcher:alpine phpunit-watcher watch```
 
@@ -26,6 +26,8 @@ pw () {
         phpunit-watcher watch "$@"
 }
 ```
+
+For a complete reference about usage and customization see [phpunit-watcher doc](https://github.com/spatie/phpunit-watcher#automatically-rerun-phpunit-tests-when-source-code-changes)
 
 ## Credits
 
