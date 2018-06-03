@@ -3,7 +3,7 @@ A docker image to use spatie/phpunit-watcher for automatically rerun PHPUnit tes
 
 ## Installation
 
-Download image ```docker pull josimarlemos/phpunit-watcher```
+Download image ```docker pull josimarlemos/phpunit-watcher:alpine```
 
 ## Usage
 
@@ -22,7 +22,7 @@ pw () {
         --interactive \
         --rm \
         --volume $(pwd):/app \
-        phpunit-watcher:alpine \
+        josimarlemos/phpunit-watcher:alpine \
         phpunit-watcher watch "$@"
 }
 ```
